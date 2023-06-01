@@ -9,10 +9,10 @@
 
 MyClass::MyClass()
 {
+	std::cout << "Hello from MyClass.dll" << std::endl;
+
 	this->_msg = std::string("No message has been set yet!");
 	this->_value = 42;
-
-	std::cout << "Hello from MyClass.dll" << std::endl;
 }
 
 MyClass::~MyClass()

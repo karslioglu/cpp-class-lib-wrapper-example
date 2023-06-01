@@ -1,5 +1,5 @@
-#ifndef __MYCLASS_H__
-#define __MYCLASS_H__
+#ifndef __MY_CLASS_H__
+#define __MY_CLASS_H__
 
 #if defined(MY_CLASS_EXPORTS)
 #  define MY_CLASSSHARED_EXPORT _declspec(dllexport)
@@ -27,4 +27,4 @@ extern "C" {
 }
 #endif
 
-#endif //__MYCLASS_H__
+#endif //__MY_CLASS_H__

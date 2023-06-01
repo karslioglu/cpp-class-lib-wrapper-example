@@ -1,4 +1,6 @@
 #pragma once
+#ifndef __MYCLASS_H__
+#define __MYCLASS_H__
 
 #if defined(MYCLASS_EXPORTS)
 #  define MYCLASSSHARED_EXPORT _declspec(dllexport)
@@ -25,3 +27,4 @@ private:
 	std::string _msg;
 	int _value;
 };
+#endif //__MYCLASS_H__

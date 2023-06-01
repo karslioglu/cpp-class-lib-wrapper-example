@@ -35,10 +35,10 @@ Bu proje my_class.dll kütüphanesini kullanan bir C uygulamasıdır. my_class.d
 * **MyClassNetCpp:**
 Bu proje MyClassNet.dll kütüphanesini kullanan bir C++.Net uygulamasıdır. MyClassNet.dll içerisinde gerçeklenen wrapper fonksiyonları aracılığı ile MyClass sınıfı çağırılır ve kullanılır.
 
-* **MyClassSharp:**
+* **MyClassNetSharp:**
 Bu proje MyClassNet.dll kütüphanesini kullanan bir C# uygulamasıdır. MyClassNet.dll içerisinde gerçeklenen wrapper fonksiyonları aracılığı ile MyClass sınıfı çağırılır ve kullanılır.
 
-* **MyClassVB:**
+* **MyClassNetVB:**
 Bu proje MyClassNet.dll kütüphanesini kullanan bir VB.Net uygulamasıdır. MyClassNet.dll içerisinde gerçeklenen wrapper fonksiyonları aracılığı ile MyClass sınıfı çağırılır ve kullanılır.
 
 ![Relationships](documents/images/relationships.png)

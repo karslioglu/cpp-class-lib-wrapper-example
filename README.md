@@ -15,64 +15,53 @@ Buraya kadar herşey çok güzel. Fakat ya diğer geliştiricile C++ değil de f
 
 Temelde 4 ana projemiz bulunmakta
 
-* MyClass
+* **MyClass:**
 Bu projede Native C++ ile bir sınıf tanımlanacak ve sonucunda bir DLL oluşturulacaktır. Proje, bir sınıfı gerçekleyecek ve paylaşacaktır. Böylece C++ ile uygulama geliştiren herkes rahatlıkla bu sınıfı kendi projelerine ekleyip kullanabilecektir.
 
-* my_class
+* **my_class:**
 Bu proje MyClass.dll kütüphanesi için bir C Wrapper implement eder. Aslında C Wrapper için ayrı bir projeye gerek yok. Bir önceki proje içerisinde gerekli C implemantasyonu da yapılabilirdi. Fakat örnekleri soyutlayarak hangi örneğin nereden başlayıp nerede bittiğini gösterebilmek adına farklı projeler yapılmıştır.
 
-* MyClassNet
+* **MyClassNet:**
 Bu proje MyClass.dll kütüphanesinin C++.Net ile .Net Wrapper örneğini gerçekler. Bu sayede MyClassNet.dll adında bir .Net kütüphanesi oluşur. Hangi .Net dilini kullanırsanız kullanın projenize MyClassNet.dll kütüphanesini ekleyerek kullanabilirsiniz.
 
 Ayrıca 5 adet ek projemiz olacak ve bu projeler üzerinden test yapacağız
 
-* MyClassCpp
+* **MyClassCpp:**
 Bu proje doğrudan MyClass.dll kütüphanesini kullanan bir C++ konsol uygulaması oluşturur. Uygulamanın çalışması için MyClassCpp.exe ve MyClass.dll dosyalarının aynı dizinde veya PATH değişkeni içerisinde tanımlanmış bir konumda bulunması gerekir.
 
-* my_classc
+* **my_classc:**
 Bu proje my_class.dll kütüphanesini kullanan bir C uygulamasıdır. my_class.dll içerisinde gerçeklenen wrapper fonksiyonları aracılığı ile MyClass sınıfı çağırılır ve kullanılır.
 
-* MyClassNet
+* **MyClassNetCpp:**
 Bu proje MyClassNet.dll kütüphanesini kullanan bir C++.Net uygulamasıdır. MyClassNet.dll içerisinde gerçeklenen wrapper fonksiyonları aracılığı ile MyClass sınıfı çağırılır ve kullanılır.
 
-* MyClassSharp
+* **MyClassSharp:**
 Bu proje MyClassNet.dll kütüphanesini kullanan bir C# uygulamasıdır. MyClassNet.dll içerisinde gerçeklenen wrapper fonksiyonları aracılığı ile MyClass sınıfı çağırılır ve kullanılır.
 
-* MyClassVB
+* **MyClassVB:**
 Bu proje MyClassNet.dll kütüphanesini kullanan bir VB.Net uygulamasıdır. MyClassNet.dll içerisinde gerçeklenen wrapper fonksiyonları aracılığı ile MyClass sınıfı çağırılır ve kullanılır.
 
-![Alt text](https://g.gravizo.com/source/test?https%3A%2F%2Fgist.githubusercontent.com%2Fraw%2F925d142677555e6c082c3f4a87fd757e%2FREADME.md)
-<details> 
-<summary></summary>
-```graphviz
-test
-    digraph G {
-        graph [fontname = "Helvetica"];
-        node [fontname = "Helvetica" penwidth=0.2];
-        edge [fontname = "Helvetica" arrowsize="0.6" ];
-        splines="curved"
-        subgraph workflow {
-            penwidth=0;
-            node [shape=rect style="rounded,dashed" penwidth=0.2];
-            aLongNamedThing [id="foo" style="rounded"]
-            aLongNamedThing -> b -> anotherLongThing;
-            d -> e -> anotherLongThing;
-        }
-        start -> aLongNamedThing;
-        start -> d;
-        anotherLongThing -> end;
-
-        start [shape=circle style="filled" fillcolor=orange height=".1"];
-        end [shape=circle style="filled" fillcolor=orange];
-    }
-test
-```
-</details>
+![Relationships](documents/images/relationships.png)
 
 ## MyClass
 Projeyi anlamlı bir şekilde örnekleyebilecek kadar geniş fakat kafa karışıklığı oluşturmayacak kadar sade bir sınıf geliştirilmek istenmiştir. Sınıfın yapısı aşağıdaki gibidir.
 
-'''cpp
+```cpp
 class MyClass() {
 public:
-'''
+	MyClass();
+	~MyClass();
+	
+	void setMessage(std::string msg);
+	std::string getMessage();
+	
+	void printMessage();
+	
+	void setValue(int value);
+	int getValue();
+	
+private:
+	std::string _msg;
+	int _value;
+};
+```

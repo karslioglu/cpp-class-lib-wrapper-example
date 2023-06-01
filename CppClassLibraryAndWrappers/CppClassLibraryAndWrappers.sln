@@ -31,9 +31,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyClassNet", "MyClassNet\My
 		{1359A6CA-28CA-43DC-A943-0F639F5A339D} = {1359A6CA-28CA-43DC-A943-0F639F5A339D}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassNetSharp", "MyClassSharp\MyClassNetSharp.csproj", "{D5A8A6E5-3935-4554-97E2-4529361F3FB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassNetSharp", "MyClassNetSharp\MyClassNetSharp.csproj", "{D5A8A6E5-3935-4554-97E2-4529361F3FB1}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MyClassNetVB", "MyClassVB\MyClassNetVB.vbproj", "{8D183C41-A8A2-41F2-8ACF-453CB72BB4DF}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MyClassNetVB", "MyClassNetVB\MyClassNetVB.vbproj", "{8D183C41-A8A2-41F2-8ACF-453CB72BB4DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

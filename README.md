@@ -1,9 +1,9 @@
 # A C++ Class Library And Wrappers
 Eğer bir C++ uygulaması geliştiriyorsanız doğal olarak birçok Sınıf oluşturacak ve bu sınıfları gerekli yerlerde kullanacaksınız. Bazı durumlarda sürekli kullandığınız sınıfları diğer projelere de aktarmanız gerekecektir. Bu durumda en iyi yöntem C++ sınıfınızı bir kütüphane olarak derlemek ve diğer uygulamalarda doğrudan kullanmak olacaktır.
 
-Eğer kütüphaneyi siz geliştirmeye devam edecekseniz fakat diğer geliştiriciler kullanacaksa ve diğer geliştiricilerin uygulamalarını yeniden derlemek zorunda kalmadan güncelleme yapabilmesi gerekiyorsa yapmanız gereken kütüphaneyi bir Shared Library (Windows için Dynamic Link Library kısaca DLL) olarak derlemek olacaktır. Böylece ortaya 3 adet dosya çıkacaktır;
+Eğer kütüphaneyi geliştirmeye siz devam edecekseniz fakat diğer geliştiriciler kullanacaksa ve diğer geliştiricilerin uygulamalarını yeniden derlemek zorunda kalmadan güncelleme yapabilmesi gerekiyorsa, yapmanız gereken, kütüphaneyi bir Shared Library (Windows için Dynamic Link Library kısaca DLL) olarak derlemek olacaktır. Böylece ortaya 3 adet dosya çıkacaktır;
 
-* Sınıf tanımlarının bulunduğu bir başlık dosyası: <name>.h
+* Sınıf tanımlarının bulunduğu bir başlık dosyası: <name>.h/<name>.hpp
 * Dışa aktarılmış sınıf sembollerini ve adreslerini tutan bir kütühane dosyası: <name>.lib
 * Asıl çalışan kodları barındıran ve uygulama ile dağıtılması gereken uzantı dosyası: <name>.dll
 

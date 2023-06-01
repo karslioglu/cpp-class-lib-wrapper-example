@@ -11,7 +11,7 @@ You add the header file to your source code and start using the class. You compi
 
 If you have made a minor change, such as a code change in the calculation algorithm of a function, or fixed a bug that will not radically change the structure within the Class, all you have to do is update the DLL file after compilation. Thus, neither other developers have to recompile their code nor users have to download the whole project from scratch.
 
-Everything is so beautiful up to here. But what if other developers are using a different language and not C++. In this case, there are several ways to follow. The safest of these is to write a Wrapper. This scenario will be exemplified in this project with several projects under a single Visual Studio Solution.
+Everything is so good up to here. But what if other developers are using a different language but not C++. In this case, there are several ways to follow. The safest of these is to write a Wrapper. This scenario will be exemplified in this project with several projects under a single Visual Studio Solution.
 
 Basically we have 3 main projects
 
@@ -22,7 +22,7 @@ In this project, a class will be defined with Native C++ and a DLL will be creat
 This project implements a C Wrapper for the MyClass.dll library. Actually, there is no need for a separate project for C Wrapper. Necessary C implementation could have been done in the previous project. However, different projects have been carried out in order to show which example starts where and where it ends by abstracting the examples.
 
 * **MyClassNet:**
-This project implements .Net Wrapper example of MyClass.dll library with C++.Net. This creates a .Net library called MyClassNet.dll. Whichever .Net language you use, you can use it by adding the MyClassNet.dll library to your project.
+This project implements .Net Wrapper example of MyClass.dll library with C++/CLI .Net. This creates a .Net library called MyClassNet.dll. Whichever .Net language you use, you can use it by adding the MyClassNet.dll library to your project.
 
 In addition, we will have 5 additional projects and we will test on these projects.
 

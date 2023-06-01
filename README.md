@@ -11,9 +11,9 @@ Başlık dosyasını kaynak kodunuza ekler ve sınıfı kullanmaya başlarsını
 
 Eğer Sınıf içerisinde yapıyı kökten değiştirmeyecek, örneğin bir fonksiyonun hesaplama algoritmasında kod değişikliği gibi minör bir değişiklik yaptıysanız ya da bir hata giderdiyseniz tek yapmanız gereken derleme sonrası DLL dosyasını güncellemek olacaktır. Böylece ne diğer geliştiriciler kodlarını yeniden derlemek ne de kullanıcılar tüm projeyi baştan indirmek zorunda kalır.
 
-Buraya kadar herşey çok güzel. Fakat ya diğer geliştiricile C++ değil de farklı bir dil kullanıyorsa. Bu durumda izlenebilecek birkaç yol var. Bunlardan en güvenlisi bir Sarıcı (Wrapper) yazmaktır. Bu projece tek bir Visual Studio Solution altında birkaç proje ile bu senaryo örneklenecektir.
+Buraya kadar herşey çok güzel. Fakat ya diğer geliştiriciler C++ değil de farklı bir dil kullanıyorsa. Bu durumda izlenebilecek birkaç yol var. Bunlardan en güvenlisi bir Sarıcı (Wrapper) yazmaktır. Bu projede tek bir Visual Studio Solution altında birkaç proje ile bu senaryo örneklenecektir.
 
-Temelde 4 ana projemiz bulunmakta
+Temelde 3 ana projemiz bulunmakta
 
 * **MyClass:**
 Bu projede Native C++ ile bir sınıf tanımlanacak ve sonucunda bir DLL oluşturulacaktır. Proje, bir sınıfı gerçekleyecek ve paylaşacaktır. Böylece C++ ile uygulama geliştiren herkes rahatlıkla bu sınıfı kendi projelerine ekleyip kullanabilecektir.
